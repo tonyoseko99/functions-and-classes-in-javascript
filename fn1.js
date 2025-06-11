@@ -120,3 +120,10 @@ function greet(name) {
 }
 // Call the greet function with a name
 console.log(greet("Alice")); // Output: Hello, Alice!
+
+const isEvenNumber = (num) => {
+    return num % 2 === 0;
+};
+
+console.log(isEvenNumber(4)); // Output: true
+console.log(isEvenNumber(7)); // Output: false

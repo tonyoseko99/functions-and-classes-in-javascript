@@ -15,8 +15,8 @@ sum(70, 80);
 sum(90, 100);
 
 function sumOfTwoNums() {
-  let number1 = 10;
-  let number2 = 20;
+  let number1 = 15;
+  let number2 = 25;
 
   let sum = number1 + number2;
 

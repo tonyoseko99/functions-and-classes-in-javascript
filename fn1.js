@@ -40,11 +40,10 @@ let books = [
 ];
 
 function printBooks(books){
-    return books;
-    console.log(books[0]);
-    console.log(books[1]);
-    console.log(books[2]
-    )
+    books. forEach((book,index) =>{
+      console.log(`Book ${index + 1}: $
+        {book title}`); 
+        });
 }
 
 printBooks(books);

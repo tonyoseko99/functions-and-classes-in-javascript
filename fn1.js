@@ -120,3 +120,17 @@ function greet(name) {
 }
 // Call the greet function with a name
 console.log(greet("Alice")); // Output: Hello, Alice!
+
+
+
+
+function capitalizeWords(sentence) {
+  return sentence
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+// Example usage:
+let answer = capitalizeWords("smart vegetable store system");
+console.log(answer);  // Output: "Smart Vegetable Store System"

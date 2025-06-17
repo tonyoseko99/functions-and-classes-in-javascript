@@ -52,12 +52,42 @@ printBooks(books);
 let numberOfBooks = books.length;
 console.log(`The number of books in the library is ${numberOfBooks}`);
 
-function listBooks() {
+/*function listBooks() {
   for (let i = 0; i < books.length; i++) {
     // return(books[i]);
     console.log(`books found: ${books[i]}`);
   }
 }
+listBooks();*/
+
+function listBooks() {
+  for (let i = 0; i < books.length; i++) {
+    console.log(`Book ${i + 1}: ${books[i].title}`);
+  }
+}
+
+
+function addBook(title){
+  books.push({title})
+console.log(`"${title}" has been added to your books collection`)
+}
+
+addBook("Boys and girls")
+
+listBooks();
+
+removeBook("Boys and girls")
+
+function removeBook(title){
+  const index = books.findIndex(book => book.title === title);
+  if (index !== -1) {
+    books.splice(index, 1);
+    console.log(`"${title}" has been removed from the library.`);
+  } else {
+    console.error(`Book "${title}" not found.`);
+  }
+}
+
 listBooks();
 
 

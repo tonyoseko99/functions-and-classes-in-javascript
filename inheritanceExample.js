@@ -14,9 +14,9 @@ class Dog extends Animal {
     }
 }
 
-// Example usage:
+
 const animal = new Animal('Generic Animal');
-animal.speak(); // Generic Animal makes a sound.
+animal.speak(); 
 
 const dog = new Dog('Rex');
-dog.speak(); // Rex barks
+dog.speak(); 
